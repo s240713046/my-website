@@ -1,0 +1,90 @@
+body {
+  background-image: url(image.png); /*背景画像*/
+  background-attachment: fixed;/*背景の固定*/
+  background-size: cover;/*画像のサイズ*/
+  background-repeat: no-repeat;/*繰り返し設定*/
+  background-position: top center;/*画像の位置*/
+}
+
+nav li{/*ボックスの設定*/
+    display: block;
+    width: 80px;
+    float: left;
+}
+
+nav a{
+    color: #fff;
+    background: url(red2.png)repeat-x bottom;
+    font-weight: bold;
+    display: block;
+    line-height: 1.0;
+    padding: 6px 0;
+    border-left: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: url(gray2.png) repeat-x bottom;
+}
+
+nav #current a{
+    color: rgb(206, 66, 6);
+    background: #fff;
+}
+
+section{/*全体の背景の設定*/
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background:linear-gradient(90deg, #feece2, #fff);
+    border-bottom: solid 6px #e0d0c8;
+    border-radius: 9px;
+}
+
+h2{/*名前のとこ*/
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: black;
+    background: #fff;
+    border-top: solid 5px rgb(248, 128, 88);
+    border-bottom: solid 5px rgb(248, 128, 88);
+}
+h3{/*題名のとこ*/
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: black;
+    border-left: solid 10px rgb(248,128,88);
+}
+
+p{/*回答のとこ*/
+   padding: 0.2em 0.5em;
+   margin: 2em 0;
+   color: black;
+   background: #fff;
+   box-shadow: 0px 0px 0px 10px #fff;
+   border: dashed 2px #ffc3c3;
+   border-radius: 8px;
+}
+
+#logo {
+    width: 600px;
+    height: auto;
+}
+
+#mofu{
+    width: 200px; 
+    height: auto;
+}
+
+#page{
+    margin: 0 auto;
+    width: 900px;
+}
+
+#main{
+    float:left;
+    width: 900px;
+}
+footer{
+    clear: both;;
+}
