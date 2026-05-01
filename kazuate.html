@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>数当て</title>
+<link rel="stylesheet" href="./default.css">
+</head>
+
+<body>
+<div id="page">
+
+<h1>数当てゲーム</h1>
+<p>1から100までの数字を当ててみてください！10回以内に当てられるでしょうか？<br>
+ゲーム開始ボタンを押してから始めてみましょう！</p>
+
+<div id="start">
+    <button onclick="start()">ゲーム開始</button>
+</div>
+
+<div class="form">
+    <label>予想を入力してください：</label>
+    <input id="num">
+    <button onclick="judge()">OK</button>
+    <span id="result"></span>
+</div>
+
+<div class="count">
+    <label>試行回数： <span id="co"></span>回</label>
+</div>
+
+<ul class="game">
+    <li><a href="kadai.html">前のページに戻る</a></li>
+</ul>
+
+<script src="kazuate.js"></script>
+<footer>
+  <p id="copyright">
+    <small>&copy; 2026 Cocomi Haga</small>
+  </p>
+</footer>
+</div>
+</body>
+</html>
