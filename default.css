@@ -41,6 +41,11 @@ section{/*全体の背景の設定*/
     border-radius: 9px;
 }
 
+h1{/*ゲームの題名*/
+    color: rgb(189, 85, 11);
+
+}
+
 h2{/*名前のとこ*/
     padding: 8px 19px;
     margin: 2em 0;
@@ -74,6 +79,10 @@ p{/*回答のとこ*/
 #mofu{
     width: 200px; 
     height: auto;
+}
+
+#seikou{
+    display: none;
 }
 
 #page{
