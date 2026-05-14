@@ -85,6 +85,10 @@ p{/*回答のとこ*/
     display: none;
 }
 
+#kekka{
+    display: none;
+}
+
 #page{
     margin: 0 auto;
     width: 900px;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけんゲーム</title>
+<script src="janken.js" type="text/javascript">
+</script>
+<link rel="stylesheet" href="./default.css">
+</head>
+<body>
+<h1>じゃんけんゲーム</h1>
+<p><strong>・ルール・</strong>　５回勝負のジャンケンをしましょう！<br>
+<br>
+１，勝った方に点数が入っていきます<br>
+２，あいこの時はどちらにも点数は入りません<br>
+３，先に５点取った方が勝ちとなります<br>
+<br>
+さあ、ゲーム開始ボタンを押して早速始めてみましょう！</p>
+<hr>
+<div id="start">
+    <button onclick="start()">ゲーム開始</button>
+</div>
+<br>
+
+ジャンケンの手を選択してください:
+<input type="radio" name="jk" value="0">グー
+<input type="radio" name="jk" value="1">チョキ
+<input type="radio" name="jk" value="2">パー
+<button onclick="judge()">OK</button>
+<br>
+<span id="result"></span>
+
+<div class="usscore">
+    <br>
+    <label>あなたの得点：<span id="user"></span>/5</label>
+</div>
+<div class="coscore">
+    <label>コンピュータの得点：<span id="comp"></span>/5</label>
+</div>
+
+<div id="kekka"></div>
+
+
+<ul class="game">
+    <li><a href="kadai.html">前のページに戻る</a></li>
+</ul>
+</body>
+</html>
+
