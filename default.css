@@ -61,6 +61,7 @@ h3{/*題名のとこ*/
     border-left: solid 10px rgb(248,128,88);
 }
 
+
 p{/*回答のとこ*/
    padding: 0.2em 0.5em;
    margin: 2em 0;
@@ -70,6 +71,8 @@ p{/*回答のとこ*/
    border: dashed 2px #ffc3c3;
    border-radius: 8px;
 }
+
+
 
 #logo {
     width: 600px;
@@ -143,3 +146,7 @@ img{
     justify-self: right; 
 }
 
+#cvs{
+    display: block;
+    margin: auto;
+}
