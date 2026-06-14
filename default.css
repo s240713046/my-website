@@ -150,3 +150,7 @@ img{
     display: block;
     margin: auto;
 }
+
+#canvas{
+    background-color: #fff;
+}

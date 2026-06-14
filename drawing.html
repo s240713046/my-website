@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+                                   
+    <title>
+        お絵描き
+    </title>
+    <link rel="stylesheet" href="./default.css">
+</head>
+ 
+<body onload="init()">
+<h1>お絵描き</h1>
+<p>
+白い部分でお絵描きができます！<br>
+ペンは３種類、色は５種類用意しました。実際にボタンを押して変更してみてください。<br>
+色んな絵を描いて遊んでみてくださいね！
+</p>
+<canvas id="canvas" width="320" height="480"></canvas>
+<script src="drawing.js" type="text/javascript"></script>
+
+<button id="pen1">ボールペン（小）</button>
+<button id="pen2">ボールペン（中）</button>
+<button id="pen3">ボールペン（大）</button><br>
+<div class="penType">
+    <label>今選択しているのは：<span id="pen"></span></label>
+</div>
+
+<button id="color1">緑</button>
+<button id="color2">赤</button>
+<button id="color3">青</button>
+<button id="color4">黄</button>
+<button id="color5">紫</button><br>
+<button id="color6">消しゴム</button>
+<div class="colorType">
+    <label>今選択しているのは：<span id="color"></span></label>
+</div>
+
+
+</body>
+</html>
+
