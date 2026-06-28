@@ -7,37 +7,6 @@ const maze = [];//迷路
 
 let ctx;
 
-/*スタートとタイマー用*/
-let startTime = 0;
-let isStarted = false;
-
-function start(){
-    createMaze(W,H);
-    repaint();
-
-    clearInterval(timer);
-    player.x = 1;
-    player.y = 1;
-    player.dir = 1;
-
-    timer = setInterval(tick,100);
-    
-    isStarted = false;
-    document.getElementById("time").textContent = "";
-
-}
-function time(){
-    startTime = Date.now();
-    isStarted = true;
-
-    document.getElementById("time").textContent = "0秒";
-}
-
- 
-/*ゴール設定*/
-let goalx = W - 2;
-let goaly = H - 2;
-
 function random(v){
     return Math.floor(Math.random() * v);//０からｖまでの乱数を整数で表す
 }
@@ -100,20 +69,7 @@ function createMaze(w,h){
 //メインルーチン
 function tick(){
 
-    if(isStarted){
-        let endTime = new Date().getTime();
-        let time = (endTime - startTime) / 1000;
-        document.getElementById("time").textContent = Math.floor(time) + "秒";
-    }
     player.update();
-
-    /*ゴール設定*/
-    if(player.x == goalx && player.y == goaly){
-        clearInterval(timer);
-        isStarted = false;
-        alert("ゴール！");
-    }
-
     repaint();
 }
 
@@ -141,13 +97,6 @@ function repaint(){
             }
         }
     }
-
-    ctx.fillStyle = "red";
-    ctx.fillRect(goalx * 16 + 2,goaly * 16 + 2, 12,12);
-
-    ctx.strokeStyle = "yellow";
-    ctx.lineWidth = 2;
-    ctx.strokeRect(goalx * 16 + 2,goaly * 16 + 2,12,12);
 
     player.paint(ctx,16,16,16,16);
 
@@ -211,16 +160,3 @@ function Player(x,y){
     };
 }
 
-function reset(){/*リセット機能*/
-    clearInterval(timer);
-
-    player.x = 1;
-    player.y = 1;
-    player.dir = 1;
-
-    timer = setInterval(tick,100);
-
-    keyCode = 0;
-
-    document.getElementById("time").textContent = "";
-}
