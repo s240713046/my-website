@@ -1,9 +1,28 @@
+h1{/*ゲームの題名*/
+    color: rgb(189, 85, 11);
+
+}
+
 body{
-    background-color: black;
+    background-image: url(image.png); /*背景画像*/
+    background-attachment: fixed;/*背景の固定*/
+    background-size: cover;/*画像のサイズ*/
+    background-repeat: no-repeat;/*繰り返し設定*/
+    background-position: top center;/*画像の位置*/
+
 }
 
 #maze{
     width: 1000px;
     height: 600px;
-    touch-action: none;
+}
+
+p{/*回答のとこ*/
+   padding: 0.2em 0.5em;
+   margin: 2em 0;
+   color: black;
+   background: #fff;
+   box-shadow: 0px 0px 0px 10px #fff;
+   border: dashed 2px #ffc3c3;
+   border-radius: 8px;
 }

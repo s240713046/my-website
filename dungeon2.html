@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dungeon</title>
+        <link rel="stylesheet" href="./dungeon.css">
+    </head>
+    <body onload="init()">
+        <h1>ダンジョン</h1>
+        <p>
+            <strong>ダンジョンを攻略しよう！</strong><br>
+            キャラクターを動かし、ゴールを目指してください。ゴールは右下にある黄色と赤の四角となっています。<br><br>
+            〇STARTボタンについて<br>
+            …新しい迷路を作成します。主に２回目の挑戦時に使うボタンですね。<br>
+            キャラクターの位置も時間も元に戻りますので、最初から始めたいときに使ってみてください！<br>
+
+            〇RESETボタンについて<br>
+            …キャラクターの位置が最初のところに戻ります。迷子になったら使ってみてください！<br>
+            
+            〇時間の測定について<br>
+            …このゲームでは時間を測定することができます！<br>
+            ・ただ迷路で遊びたいときは、そのままキャラクターを動かしてください。<br>
+            ・時間を測定したいときは、「時間を測定する」というボタンを押してください。<br><br>
+
+            できるだけ短い時間でのゲームクリアに目指して遊ぶのも楽しそうですね！<br>
+            ぜひ挑戦してみてください！
+        </p>
+        <button onclick="start()">START</button>
+        <button onclick="time()">時間を測定する</button>
+        <span id = "time"></span>
+        <br>
+        <button onclick="reset()">RESET</button>
+        <br>
+        <canvas id="maze" width="1000" height="600"></canvas>
+        <script src="dungeon2.js" type="text/javascript"></script>
+        <img id = "hero0" src="hero0.png" style="display: none">
+        <img id = "hero1" src="hero1.png" style="display: none">
+        <img id = "hero2" src="hero2.png" style="display: none">
+        <img id = "hero3" src="hero3.png" style="display: none">
+        
+
+        <ul class="game">
+            <li><a href="kadai.html">前のページに戻る</a></li>
+        </ul>
+    </body>
+</html>
