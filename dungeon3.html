@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dungeon</title>
+        <link rel="stylesheet" href="./dungeon.css">
+    </head>
+    <body onload="init()">
+        <h1>ダンジョン</h1>
+        <p>
+            <strong>三毛猫をご飯の場所まで連れて行ってあげましょう！</strong><br>
+            三毛猫のキャラクターを動かし、ご飯が置かれているところまで案内してください。ご飯は画面の右下にあります。<br><br>
+
+            〇STARTボタンについて<br>
+            …新しい迷路を作成します。主に２回目の挑戦時に使うボタンですね。<br>
+            三毛猫の位置も時間も元に戻りますので、最初から始めたいときに使ってみてください！<br>
+            〇RESETボタンについて<br>
+            …三毛猫の位置が最初のところに戻ります。迷子になったら使ってみてください！<br>
+            〇時間の測定について<br>
+            …このゲームでは時間を測定することができます！<br>
+            ・ただ迷路で遊びたいときは、そのままキャラクターを動かしてください。<br>
+            ・時間を測定したいときは、「時間を測定する」というボタンを押してください。<br><br>
+
+            できるだけ短い時間でのゲームクリアに目指して遊ぶのも楽しそうですね！<br>
+            ぜひ挑戦してみてください！
+        </p>
+        <button onclick="start()">START</button>
+        <button onclick="time()">時間を測定する</button>
+        <span id = "time"></span>
+        <br>
+        <button onclick="reset()">RESET</button>
+        <br>
+        <canvas id="maze" width="820" height="580"></canvas>
+        <script src="dungeon3.js" type="text/javascript"></script>
+        <img id = "dneko0" src="dneko0.png" style="display: none">
+        <img id = "dneko1" src="dneko1.png" style="display: none">
+        <img id = "dneko2" src="dneko2.png" style="display: none">
+        <img id = "dneko3" src="dneko3.png" style="display: none">
+        
+
+        <ul class="game">
+            <li><a href="kadai.html">前のページに戻る</a></li>
+        </ul>
+    </body>
+</html>
