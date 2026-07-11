@@ -1,0 +1,25 @@
+h1{/*ゲームの題名*/
+    color: rgb(189, 85, 11);
+
+}
+
+body{
+    background-image: url(image.png); /*背景画像*/
+    background-attachment: fixed;/*背景の固定*/
+    background-size: cover;/*画像のサイズ*/
+    background-repeat: no-repeat;/*繰り返し設定*/
+    background-position: top center;/*画像の位置*/
+
+}
+
+#canvas{
+    width: 800px;
+    height: 800px;
+    touch-action: none;
+}
+
+#START{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
